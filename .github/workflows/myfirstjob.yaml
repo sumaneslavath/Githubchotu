@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
         - name: Print my name
-          run: echo "hello, Am Sumanavinash2 and Am learning GHA"
+          run: echo "hello, Am Suman and Am learning GHA"
