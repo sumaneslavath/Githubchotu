@@ -1,6 +1,6 @@
 
 console.log("==================================================");
-console.log("          SUMAN ESLAVATH - PROFILE");
+console.log("          SUMANESLAVATH - PROFILE");
 console.log("==================================================");
 
 const profile = {
