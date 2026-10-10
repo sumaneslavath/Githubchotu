@@ -1,27 +1,27 @@
 name: 06 - Matrix V OS
 
 on:
-    push:
-        branches: ["*"]
+    push:
+        branches: ["*"]
 
 jobs:
-    node-setup:
-        strategy:
-            matrix:
-                os:
-                    - ubuntu-latest
-                    - macos-latest
-                    - windows-latest
-                node:
-                    - 22
-                    - 24
-                    - 26
+    node-setup:
+        strategy:
+            matrix:
+                os:
+                    - ubuntu-latest
+                    - macos-latest
+                    - windows-latest
+                node:
+                    - 22
+                    - 24
+                    - 26
 
-        runs-on: ${{ matrix.os }}
-        steps:
-            - uses: actions/checkout@v7
-            - uses: actions/setup-node@v7
-              with:
-                node-version: ${{ matrix.node }}
-            - run: node app.js
-            - run: node -v
+        runs-on: ${{ matrix.os }}
+        steps:
+            - uses: actions/checkout@v7
+            - uses: actions/setup-node@v7
+              with:
+                node-version: ${{ matrix.node }}
+            - run: node app.js
+            - run: node -v
